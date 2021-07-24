@@ -1,0 +1,80 @@
+body{
+    font-size: 15px;
+}
+p, button{
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+h3{
+    font-size: 2.5rem;
+}
+p{
+    line-height: 1.75rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.card{
+    display: flex;
+    flex-flow: column;
+    padding: 2rem 2.5rem 2rem 2.5rem;
+    width: 70%;
+}
+.card button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 1.5rem;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    border-style: none;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        flex-flow: row nowrap;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .card{
+        width: 200px;
+    }
+    .card p{
+        margin-bottom: 5rem;
+    }
+    .card button{
+        margin-bottom: 1rem;
+    }
+    .sedans{
+        border-radius: 0.5rem 0 0rem 0.5rem;
+    }
+    .luxury{
+        border-radius: 0rem 0.5rem 0.5rem 0rem;
+    }
+}
